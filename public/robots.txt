@@ -5,4 +5,4 @@ Disallow: /dashboard
 Disallow: /auth
 Disallow: /upload-documents
 
-Sitemap: https://itiitiyogashram.vercel.app/sitemap.xml
+Sitemap: https://itiitiyogashram.com/sitemap.xml
