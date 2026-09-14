@@ -1,4 +1,6 @@
 {
+  "framework": null,
+  "buildCommand": "npm run build",
   "redirects": [
     {
       "source": "/:path*",
