@@ -1,4 +1,15 @@
 {
-  "buildCommand": "npm run build",
-  "framework": null
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "itiitiyogashram.vercel.app"
+        }
+      ],
+      "destination": "https://itiitiyogashram.com/:path*",
+      "permanent": true
+    }
+  ]
 }
