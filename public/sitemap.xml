@@ -1,64 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://itiitiyogashram.com/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/about</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/offerings</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/lunar-yoga</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/gallery</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/videos</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/blog</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/astrology</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/apply</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://itiitiyogashram.com/contact</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
+  <url><loc>https://itiitiyogashram.com/</loc></url>
+  <url><loc>https://itiitiyogashram.com/about</loc></url>
+  <url><loc>https://itiitiyogashram.com/offerings</loc></url>
+  <url><loc>https://itiitiyogashram.com/lunar-yoga</loc></url>
+  <url><loc>https://itiitiyogashram.com/gallery</loc></url>
+  <url><loc>https://itiitiyogashram.com/videos</loc></url>
+  <url><loc>https://itiitiyogashram.com/blog</loc></url>
+  <url><loc>https://itiitiyogashram.com/astrology</loc></url>
+  <url><loc>https://itiitiyogashram.com/apply</loc></url>
+  <url><loc>https://itiitiyogashram.com/contact</loc></url>
 </urlset>
