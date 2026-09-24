@@ -37,7 +37,11 @@ function ErrorC({ error }: { error: Error }) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   ssr: true,
-  head: () => ({
+  head: ({ matches }) => {
+    const rawPath = matches[matches.length - 1]?.pathname ?? "/";
+    const path = rawPath === "/" ? "/" : rawPath.replace(/\/+$/, "");
+    const canonicalUrl = `https://itiitiyogashram.com${path}`;
+    return {
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -58,7 +62,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap",
       },
-      { rel: "canonical", href: "https://itiitiyogashram.vercel.app/" },
+      { rel: "canonical", href: canonicalUrl },
     ],
     scripts: [
       {
@@ -68,7 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "ExerciseGym",
           name: "Iti Iti Yogashram",
           description: "Certified yoga classes with Nishant Jha in Prayagraj, India — online & offline.",
-          url: "https://itiitiyogashram.vercel.app/",
+          url: "https://itiitiyogashram.com/",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Prayagraj",
@@ -82,7 +86,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         }),
       },
     ],
-  }),
+    };
+  },
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFound,
