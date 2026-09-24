@@ -37,7 +37,6 @@ export const Route = createFileRoute("/blog/")({
       { property: "og:description", content: "Yoga, wellness and lifestyle articles from Iti Iti Yogashram — tips, practices and insights from Nishant Jha." },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "https://itiitiyogashram.vercel.app/blog" }],
   }),
 });
 
