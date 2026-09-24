@@ -33,7 +33,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const post = loaderData?.post;
     const title = post?.title ? `${post.title} | Iti Iti Yogashram Blog` : "Blog | Iti Iti Yogashram";
     const description = post?.excerpt || "Read the latest yoga, wellness and lifestyle insights from Iti Iti Yogashram.";
-    const url = post?.slug ? `https://itiitiyogashram.vercel.app/blog/${post.slug}` : "https://itiitiyogashram.vercel.app/blog";
+    const url = post?.slug ? `https://itiitiyogashram.com/blog/${post.slug}` : "https://itiitiyogashram.com/blog";
 
     return {
       meta: [
@@ -45,7 +45,6 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:url", content: url },
         ...(post?.cover_image_url ? [{ property: "og:image", content: post.cover_image_url }] : []),
       ],
-      links: [{ rel: "canonical", href: url }],
       scripts: post
         ? [
             {
