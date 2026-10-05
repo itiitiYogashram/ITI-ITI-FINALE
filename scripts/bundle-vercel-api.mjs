@@ -26,7 +26,7 @@ async function main() {
     bundle: true,
     platform: "node",
     format: "esm",
-    target: "node20",
+    target: "node24",
     external: ["@vercel/node"],
   });
 
@@ -34,7 +34,7 @@ async function main() {
     `${outDir}/.vc-config.json`,
     JSON.stringify(
       {
-        runtime: "nodejs20.x",
+        runtime: "nodejs24.x",
         handler: "index.mjs",
         launcherType: "Nodejs",
         shouldAddHelpers: true,
