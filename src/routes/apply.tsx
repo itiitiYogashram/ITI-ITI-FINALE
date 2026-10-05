@@ -69,8 +69,8 @@ const fallbackForm: FormDefinition = {
     { id: "occupation", key: "occupation", type: "short_text", label: "Occupation", placeholder: "Occupation", width: "100%" },
     { id: "time_zone", key: "time_zone", type: "short_text", label: "Time Zone (Auto Detect)", placeholder: "Auto-detected zone", width: "100%" },
     { id: "experience", key: "experience", type: "dropdown", label: "Experience", placeholder: "Select experience", options: ["Never Practiced", "Beginner", "Intermediate", "Advanced"], width: "100%" },
-    { id: "goals", key: "goals", type: "checkbox", label: "Goals", options: ["Weight Loss", "Flexibility", "Strength", "Balance", "Better Posture", "Stress Relief", "Mental Peace", "Pain Relief", "Injury Recovery", "Improve Health", "Better Sleep", "Meditation", "Other"], width: "100%" },
-    { id: "areas_of_interest", key: "areas_of_interest", type: "checkbox", label: "Areas of Interest", options: ["Asana", "Pranayama", "Meditation", "Yoga Nidra", "Yin Yoga", "Ashtanga Yoga", "Yoga Philosophy"], width: "100%" },
+    { id: "goals", key: "goals", type: "checkbox", label: "Goals", options: ["Weight Loss", "Flexibility", "Strength", "Balance", "Better Posture", "Stress Relief", "Mental Peace", "Pain Relief", "Better Sleep", "Building Consistency"], width: "100%" },
+    { id: "areas_of_interest", key: "areas_of_interest", type: "checkbox", label: "Areas of Interest", options: ["Asana", "Pranayama", "Meditation", "Yoga Nidra", "Yin Yoga", "Ashtanga Yoga", "Yoga Philosophy", "Wellness Coaching"], width: "100%" },
     { id: "stress_level", key: "stress_level", type: "slider", label: "Stress Level (1-10)", placeholder: "1 to 10", width: "100%" },
     { id: "physical_activity", key: "physical_activity", type: "slider", label: "Physical Activity", description: "Very Inactive → Very Active", width: "100%" },
     { id: "bones_and_joints", key: "bones_and_joints", type: "checkbox", label: "Bones & Joints", options: ["Arthritis", "Cervical", "Back Pain", "Sciatica", "Slipped Disc"], width: "100%" },
@@ -433,7 +433,7 @@ function Apply() {
           <div className="section-label">Join Us</div>
           <h1 className="section-title">Apply to <em>Practice</em></h1>
           <p style={{ color: "var(--muted)", marginTop: 16, marginBottom: 32, lineHeight: 1.7 }}>
-            Submit an application to get started. Nishant or our team will reach out to you personally, and once confirmed we'll activate your account so you can access our video library and members area.
+            Submit an application to get started. Nishant or our team will reach out to you personally, and once confirmed we'll activate your account so you can access our video library and membership.
           </p>
 
           {done ? (
