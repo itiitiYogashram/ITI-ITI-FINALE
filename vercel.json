@@ -1,6 +1,7 @@
 {
   "framework": null,
   "buildCommand": "npm run build",
+  "nodeVersion": "22.x",
   "redirects": [
     {
       "source": "/:path*",
