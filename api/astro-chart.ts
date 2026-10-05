@@ -10,7 +10,7 @@
 //   - Get a key at https://www.navamsha.in/auth/signup
 //   - Put it in the NAVAMSHA_API_KEY environment variable (see env.local.example).
 //   - Docs: https://api.navamsha.in/docs
-
+// 
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 const NAVAMSHA_BASE = "https://api.navamsha.in/api/v1";
@@ -100,7 +100,7 @@ async function geocodePlace(place: string): Promise<{ lat: number; lon: number }
 async function getTimezoneForLocation(latitude: number, longitude: number, year: number, month: number, day: number, hours: number, minutes: number): Promise<number> {
   // Dynamically import `geo-tz` and handle CommonJS/ESM export shapes.
   const geoTzMod = await import("geo-tz").catch((e) => {
-    console.error("dynamic import geo-tz failed", e?.message ?? e);
+    console.error("dynamic import geo-tz failed", (e as any)?.message ?? e);
     return null;
   });
   if (!geoTzMod) {
@@ -119,7 +119,7 @@ async function getTimezoneForLocation(latitude: number, longitude: number, year:
         }
       }
     } catch (e) {
-      console.error("require fallback for geo-tz failed", e?.message ?? e);
+      console.error("require fallback for geo-tz failed", (e as any)?.message ?? e);
     }
     throw new Error("geo-tz package not available");
   }
@@ -140,7 +140,7 @@ async function getTimezoneForLocation(latitude: number, longitude: number, year:
       else if (typeof cjs?.default === "function") geoTzFn = cjs.default;
       else if (typeof cjs?.geoTz === "function") geoTzFn = cjs.geoTz;
     } catch (e) {
-      console.error("require fallback for geo-tz failed", e?.message ?? e);
+      console.error("require fallback for geo-tz failed", (e as any)?.message ?? e);
     }
   }
 
